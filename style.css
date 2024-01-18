@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
+.login-bar .login{
+    height: 50xp;
+    width: 80xp;
+    color: #fff;
+    background-color: #5541F8;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
