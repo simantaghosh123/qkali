@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Encode Sans Condensed', sans-serif;
+
 }
 
 nav .part-1 {
@@ -11,7 +13,7 @@ nav .part-1 {
 }
 
 nav svg {
-    margin-left: 5px;
+    margin: 10px;
     width: 120px;
 
 }
@@ -19,12 +21,15 @@ nav svg {
 .part-2 {
     height: 40px;
     width: 100vw;
-    padding: 0 10px;
+    margin: 10px 0;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     text-align: center;
     background-color: #FFFFFF;
     justify-content: space-between;
+    position: relative;
+    z-index: 99;
 }
 
 .three-dot {
@@ -75,7 +80,7 @@ nav svg {
 .box1 {
     height: 80vh;
     width: 95vw;
-    margin: 10px 2.5vw;
+    margin: 20px 2.5vw;
     border-radius: 8px;
     background-image: url("asset/img/dog-box1.jpg");
     background-size: cover;
@@ -135,30 +140,36 @@ nav svg {
     background-color: transparent;
     margin-right: 5px;
 }
-.container-2{
+
+.container-2 {
+    background: #f7a7a7;
     position: relative;
     font-family: 'Encode Sans Condensed', sans-serif;
 
 }
-.container-2 h2{
+
+.headding {
     text-align: center;
     margin: 60px 0 20px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: 700;
+}
 
-/* }
+/*
 .container-2 .cards{
     height: 90vh;
     width: 90vw;
     border: 2px solid black;
-    margin: 10px 5vw; */
-
-}
-.container-2 .cards{
+    margin: 10px 5vw; }*/
+.container-2 .cards {
     /* width: 200vw; */
     /* overflow-x: hidden; */
     display: flex;
     flex-direction: column;
 }
-.card-1,.card-2{
+
+.card-1,
+.card-2 {
     height: 60vh;
     width: 80vw;
     border: 1px solid red;
@@ -166,17 +177,20 @@ nav svg {
     position: relative;
     border-radius: 5px;
 }
-.cards img{
-  object-fit: cover;
-  height: 50%;
-  width: 100%;
-  border-radius: 5px 5px 0 0;
+
+.cards img {
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
+
 .cards .dogs {
     position: absolute;
     left: 15px;
     top: 15px;
 }
+
 .cards .b1 {
     padding: 20px;
     position: absolute;
@@ -184,11 +198,102 @@ nav svg {
     bottom: 0;
     left: 0;
 }
-.cards .b1 .b1-bottom{
+
+.cards .b1 .b1-bottom {
     font-size: 12px;
     font-weight: 600;
     color: rgb(87, 88, 90);
 }
-.cards .b1 .b1-bottom .i1 span{
+
+.cards .b1 .b1-bottom .i1 span {
     font-weight: 500;
+}
+
+.container-3 {
+    background-color: #f0f1f7;
+}
+
+.container-3 .dogs {
+    width: 65px;
+    height: 26px;
+    padding: 0;
+    margin: 20px;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+}
+
+.social-links .sm {
+    position: relative;
+    background: #fff;
+    height: 85px;
+    border-radius: 12px;
+    margin: 5px 2.5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family:'DM Sasn', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s;
+    z-index: 1;
+
+}
+.sm::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1877F2;
+    color: #E60023;
+    transition: top 0.4s ease;
+    z-index: 0;
+}
+.sm:hover::before{
+    top: 0;
+    z-index: 0;
+}
+
+.social-links .sm .big {
+    font-weight: 700;
+    color: #222;
+    line-height: 24px;
+    font-size: 15px;
+}
+.social-links .sm .small {
+    color: #8e8b8c;
+    font-size: 11px;
+    display: block;
+    line-height: normal;
+}
+.fb{
+    color: #1877F2;
+}
+.fa-youtube{
+    color: #FF0001;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-pinterest-p{
+    color: #E60023;
+}
+.fa-instagram{
+    color: #E1306C;
+}
+.fa-linkedin-in{
+    color: #0077B5;
+}
+.fa-behance{
+    color: #1869FF;
+}
+.fa-dribbble{
+    color: #EA4C89;
 }
