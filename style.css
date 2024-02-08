@@ -241,7 +241,7 @@ nav svg {
     cursor: pointer;
     overflow: hidden;
     transition: color 0.4s;
-    z-index: 1;
+    z-index: -1;
 
 }
 .sm::before{
