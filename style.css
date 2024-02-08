@@ -251,14 +251,13 @@ nav svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1877F2;
+    background-color: #adcbf3;
     color: #E60023;
     transition: top 0.4s ease;
-    z-index: 0;
+    z-index: -1;
 }
 .sm:hover::before{
     top: 0;
-    z-index: 0;
 }
 
 .social-links .sm .big {
